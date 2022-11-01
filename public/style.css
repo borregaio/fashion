@@ -9,28 +9,45 @@ html {
 
 body {
     background-color: #212121;
-    background-image: linear-gradient(45deg, #000, #212121);
+    background-image: linear-gradient(to right bottom, #212121, #1b1b1b, #141414, #0c0c0c, #000000);
 }
 
-.header {
-    height: 90px;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background-color: none;
 }
 
-.title {
-    display: inline-block;
-    margin-top: 40px;
-    margin-left: 30px;
+nav a {
+    text-decoration: none;
+    color: #fafafb;
+}
+
+nav a:hover {
+    color: #fafafb;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 50px;
     font-family: "Bebas Neue", sans-serif;
     font-size: 30px;
     color: #fafafb;
 }
 
-.name {
-    display: inline-block;
+.logo span {
     font-size: 20px;
     color: #fafafb;
+}
+
+.return {
+    margin-right: 50px;
     font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    color: #fafafb;
 }
 
 .footer {
@@ -118,10 +135,13 @@ body {
 .carousel img {
     position: relative;
     margin-top: 40px;
+    margin-bottom: 75px;
     border-radius: 10px;
     max-width: 2000px;
-    height: 90vh;
+    height: 75vh;
 }
+
+/* Mobile phones */
 
 @media only screen and (max-width: 600px) {
 
