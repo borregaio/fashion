@@ -10,27 +10,39 @@ app.get("/", function (req, res) {
 });
 
 app.get("/fleur", function(req, res) {
-    res.render("fleur");
+    res.render("carousel", {
+        editorialName: "fleur"
+    });
 });
 
 app.get("/hiding", function(req, res) {
-    res.render("hiding");
+    res.render("carousel", {
+        editorialName: "hiding"
+    });
 });
 
 app.get("/amen", function(req, res) {
-    res.render("amen");
+    res.render("carousel", {
+        editorialName: "amen"
+    });
 });
 
 app.get("/sunny", function(req, res) {
-    res.render("sunny");
+    res.render("carousel", {
+        editorialName: "sunny"
+    });
 });
 
 app.get("/summer", function(req, res) {
-    res.render("summer");
+    res.render("carousel", {
+        editorialName: "summer"
+    });
 });
 
 app.get("/room", function(req, res) {
-    res.render("room");
+    res.render("carousel", {
+        editorialName: "room"
+    });
 });
 
 app.listen(3000, function () { console.log("Server is listening on port 3000") });
