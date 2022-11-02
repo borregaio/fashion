@@ -13,10 +13,6 @@ body {
 }
 
 nav {
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    flex-wrap: wrap;
     background-color: none;
 }
 
@@ -31,7 +27,6 @@ nav a:hover {
 
 .logo {
     margin-top: 30px;
-    margin-bottom: 20px;
     margin-left: 50px;
     font-family: "Bebas Neue", sans-serif;
     font-size: 30px;
@@ -145,7 +140,15 @@ nav a:hover {
 
 /* Mobile phones */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
+
+
+    .logo {
+        margin: 0;
+        padding-top: 50px;
+        text-align: center;
+        margin: none;
+    }
 
     .wrapper img {
         width: 300px;
@@ -162,5 +165,16 @@ nav a:hover {
 
     .col-mobile {
         margin-bottom: 50px;
+    }
+
+    /* Carousel */
+
+    .carousel-inner {
+        width: 100%;
+    }
+
+    .carousel img {
+        max-width: 400px;
+        object-fit: contain;
     }
 }
