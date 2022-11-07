@@ -14,6 +14,7 @@ body {
 
 nav {
     background-color: none;
+    height: 100px;
 }
 
 nav a {
@@ -38,15 +39,6 @@ nav a:hover {
     color: #fafafb;
 }
 
-.return {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-right: 50px;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 10px;
-    color: #fafafb;
-}
-
 .footer {
     height: 60px;
     background: #292929;
@@ -67,8 +59,8 @@ nav a:hover {
     text-align: center;
 }
 
-.row {
-    margin-bottom: 50px;
+.col {
+    padding: 20px;
 }
 
 .row-single {
@@ -127,21 +119,22 @@ nav a:hover {
 .carousel-inner {
     position: relative;
     text-align: center;
+    height: 100vh;
+}
+
+.carousel-item {
+    position: relative;
+    height: 100%;
 }
 
 .carousel img {
-    position: relative;
-    margin-top: 40px;
-    margin-bottom: 75px;
-    border-radius: 10px;
-    max-width: 1000px;
-    height: 75vh;
+    object-fit: contain;
+    height: 90vh;
 }
 
 /* Mobile phones */
 
 @media only screen and (max-width: 480px) {
-
 
     .logo {
         margin: 0;
@@ -151,30 +144,14 @@ nav a:hover {
     }
 
     .wrapper img {
-        width: 300px;
+        width: 250px;
     }
 
     .overlay h2 {
         font-size: 30px;
     }
 
-    .col {
-        display: inline-block;
-        text-align: center;
-    }
-
-    .col-mobile {
-        margin-bottom: 50px;
-    }
-
-    /* Carousel */
-
-    .carousel {
-        width: 100%;
-    }
-
     .carousel img {
-        max-width: 400px;
-        object-fit: contain;
+        max-width: 50vh;
     }
 }
